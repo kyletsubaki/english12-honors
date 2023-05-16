@@ -1,13 +1,16 @@
-function Bookshelf() { //It functions
-    const [selected, setSelected] = useState<number | null>(null);
+import { useState, createContext, PropsWithChildren } from "react";
 
-    return (
+const SelectedContext = createContext<[string | null, React.Dispatch<React.SetStateAction<string | null>>] | undefined>(undefined);
+
+function Bookshelf({children}: PropsWithChildren) { //It functions
+    const [selected, setSelected] = useState<string | null>(null);
+
+    return (<SelectedContext.Provider value={[selected, setSelected]}>
         <div className="grid">
-            <Book cover="internment.jpg" title="Internment" opened={selected == 0} onClick={() => setSelected(0)}>
-                <p>It was the worst of times</p>
-            </Book>
+            {children}
         </div>
-    )
+    </SelectedContext.Provider>)
 }
 
-export default function Bookshelf;
+export {SelectedContext};
+export default Bookshelf;
