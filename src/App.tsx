@@ -59,8 +59,8 @@ function App() { // Content go here :)
                         killed by the Marcos dictatorship while in Hawaii.
                     </p>
                 </Book>
-                <Book coverImage="peteryew.png" title="Peter Yew Beating" color='#63252a' position={[-80, 15, 10]}>
-                    {/* <p>
+                <Book coverImage="yujiIchioka.webp" title="Yuji Ichioka" color='#63252a' position={[-60, 15, 10]}>
+                <p>
                         Yuji Ichioka was a prominent figure in Asian American history. He was a scholar, historian, and
                         activist who dedicated his life to studying and advocating for the rights and recognition of
                         Asian Americans. Born in 1936 in California, he grew up experiencing the racism and
@@ -71,7 +71,9 @@ function App() { // Content go here :)
                         sought to shed light on the contributions and struggles of Asian Americans, challenging
                         stereotypes and promoting social justice. His work greatly influenced the field of Asian American
                         studies and continues to inspire generations of scholars and activists.
-                    </p> */}
+                    </p> 
+                </Book>
+                <Book coverImage="peteryew.png" title="Peter Yew Beating" color='#63252a' position={[-80, 15, 10]}>
                     <p>
                         In 1975, Peter Yew, a Chinese American man, was brutally beaten by police officers in New York
                         City's Chinatown. The incident took place on May 17th, during a period of heightened tensions
