@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: 45em;
-        width: 72em;
+    width: 72em;
     gap: 2em;
 }
 
@@ -18,8 +18,8 @@
     padding: 2em;
     border-radius: 0 1em 1em 0;
     box-sizing: border-box;
-        height: 100%;
-        box-shadow: 2px -2px 2px #0003 inset, -2px 2px 2px #fff3 inset, -8px -8px 8px #0005;
+    height: 100%;
+    box-shadow: 2px -2px 2px #0003 inset, -2px 2px 2px #fff3 inset, -8px -8px 8px #0005;
 }
 
 .background {
@@ -36,22 +36,22 @@
     top: 50%;
     left: 50%;
     width: 60em;
-        height: 40em;
+    height: 40em;
     transform: translate(-50%, -50%);
     z-index: 1;
     padding: 2em;
-        border-radius: 1em;
-        float: left;
-        overflow-x: auto;
-        box-shadow: 2px -2px 2px #0003 inset, -2px 2px 2px #fff3 inset;
-    }
-    
-    .popup-book {
+    border-radius: 1em;
+    float: left;
+    overflow-x: auto;
+    box-shadow: 2px -2px 2px #0003 inset, -2px 2px 2px #fff3 inset;
+}
+
+.popup-book {
     background-color: white;
     column-gap: 4em;
     padding: 2em;
     column-width: 26em;
-        height: 100%;
-        box-sizing: border-box;
-        box-shadow: 0 0 4px 2px #0007;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px 2px #0007;
 }
