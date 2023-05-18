@@ -31,7 +31,16 @@
     background-color: #0000003f;
 }
 
-.popup-book-container {
+.content-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.content {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -44,9 +53,10 @@
     float: left;
     overflow-x: auto;
     box-shadow: 2px -2px 2px #0003 inset, -2px 2px 2px #fff3 inset;
+    pointer-events: auto;
 }
 
-.popup-book {
+.content-pages {
     background-color: white;
     column-gap: 4em;
     padding: 2em;
@@ -54,4 +64,61 @@
     height: 100%;
     box-sizing: border-box;
     box-shadow: 0 0 4px 2px #0007;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-enter-done {
+    opacity: 1;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-done,
+.fade-exit-active {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    transition: 0.5s 0.5s;
+}
+
+.fade-exit-active {
+    transition: 0.5s;
+}
+
+.slide-enter {
+    transform: translateY(100vh);
+}
+
+.slide-enter-active,
+.slide-enter-done {
+    transform: translateY(0);
+}
+
+.slide-exit {
+    transform: translateY(0);
+}
+
+.slide-exit-done,
+.slide-exit-active {
+    transform: translateY(100vh);
+}
+
+.slide-enter-active {
+    transition: 0.5s 0.5s;
+}
+
+.slide-exit-active {
+    transition: 0.5s;
+}
+
+.slide-enter-active,
+.slide-exit-active {
+    z-index: 1;
 }
