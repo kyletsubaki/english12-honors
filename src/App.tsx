@@ -114,6 +114,7 @@ function App() { // Content go here :)
                         strikes also inspired students and activists to fight for the preservation of Asian American
                         neighborhoods.
                     </p>
+                    <p>[TO BE EXPANDED]</p>
                 </Book>
             </Bookshelf>
         </main>
