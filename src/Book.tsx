@@ -15,12 +15,12 @@ function Book({children, coverImage, title, position = [0, 0, 0], color }: {
         setSelected(title);
     }
     return (
-        <section className={'book'} style={{
-            transform: `translate(${position[0]}px, ${position[1]}px) rotate(${position[2]}deg)`,
-            backgroundColor: color,
-            visibility: opened ? 'hidden' : undefined
-        }}>
-            <div className="cover" onClick={handleClick}>
+        <section className={'book'}>
+            <div className="cover" onClick={handleClick} style={{
+                transform: `translate(${position[0]}px, ${position[1]}px) rotate(${position[2]}deg)`,
+                backgroundColor: color,
+                visibility: opened ? 'hidden' : undefined
+            }}>
                 <img src={coverImage} alt={title} className="cover-image" />
                 <h2>{title}</h2>
             </div>
