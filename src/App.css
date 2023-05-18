@@ -28,7 +28,8 @@
     width: 100%;
     left: 0;
     top: 0;
-    background-color: #0000003f;
+    background: #0000003f;
+    background: radial-gradient(circle, #0003 0%, #0009 100%);
 }
 
 .content-container {
@@ -64,6 +65,19 @@
     height: 100%;
     box-sizing: border-box;
     box-shadow: 0 0 4px 2px #0007;
+    position: relative;
+}
+
+.content-pages::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    display: inline-block;
+    width: 4em;
+    transform: translate(-50%);
+    background: linear-gradient(90deg, transparent 0%, #0003 50%, transparent 100%);
 }
 
 .fade-enter {
@@ -85,11 +99,11 @@
 }
 
 .fade-enter-active {
-    transition: 0.5s 0.5s;
+    transition: 1s;
 }
 
 .fade-exit-active {
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .slide-enter {

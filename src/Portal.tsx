@@ -1,4 +1,4 @@
-import { PropsWithChildren, useEffect } from "react";
+import { PropsWithChildren } from "react";
 import { createPortal } from "react-dom";
 
 const Portal = ({children}: PropsWithChildren) => {
