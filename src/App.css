@@ -1,9 +1,9 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: 45em;
-    width: 72em;
+    width: 90.5em;
     gap: 2em;
 }
 
@@ -20,6 +20,7 @@
     box-sizing: border-box;
     height: 100%;
     box-shadow: 2px -2px 2px #0003 inset, -2px 2px 2px #fff3 inset, -8px -8px 8px #0005;
+    /* background-image: url('./leather.png'); */
 }
 
 .background {
@@ -61,8 +62,8 @@
     background-color: white;
     column-gap: 4em;
     padding: 2em;
-    column-width: 26em;
-    height: 100%;
+    column-count: 2;
+    min-height: 100%;
     box-sizing: border-box;
     box-shadow: 0 0 4px 2px #0007;
     position: relative;
@@ -135,4 +136,26 @@
 .slide-enter-active,
 .slide-exit-active {
     z-index: 1;
+}
+
+.nameplate-container {
+    position: absolute;
+    left: 50%;
+    top: 3em;
+    perspective: 1000px;
+    transform: translateX(-50%);
+}
+
+.nameplate {
+    background: linear-gradient(#555 0%, #3c3c3c 100%);
+    color: white;
+    padding: 1em;
+    transform: rotateX(-30deg);
+    font-weight: bold;
+    box-shadow: 0 -5px 5px #0007;
+    text-align: center;
+}
+
+.bibliography p {
+    text-indent: 2em hanging;
 }

@@ -5,7 +5,7 @@ import { CSSTransition } from 'react-transition-group';
 
 function Book({ children, coverImage, title, position = [0, 0, 0], color }: {
     children: ReactNode,
-    coverImage: string,
+    coverImage?: string,
     title: string,
     position?: [x: number, y: number, rotate: number],
     color?: string
@@ -24,9 +24,8 @@ function Book({ children, coverImage, title, position = [0, 0, 0], color }: {
                 <div className="cover" onClick={handleClick} style={{
                     transform: `translate(${position[0]}px, ${position[1]}px) rotate(${position[2]}deg)`,
                     backgroundColor: color,
-                    // visibility: opened ? 'hidden' : undefined
                 }}>
-                    <img src={coverImage} alt={title} className="cover-image" />
+                    {coverImage && <img src={coverImage} alt={title} className="cover-image" />}
                     <h2>{title}</h2>
                 </div>
             </div>
@@ -40,7 +39,7 @@ function Book({ children, coverImage, title, position = [0, 0, 0], color }: {
                     <div className="content" style={{ backgroundColor: color }}>
                         <div className="content-pages">
                             <h2>{title}</h2>
-                            <img src={coverImage} alt={title} className="cover-image" />
+                            {coverImage && <img src={coverImage} alt={title} className="cover-image" />}
                             {children}
                         </div>
                     </div>
