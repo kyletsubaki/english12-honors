@@ -28,16 +28,25 @@
     background-color: #0000003f;
 }
 
-.content {
+.popup-book-container {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 50em;
-    max-height: 40em;
-    overflow-y: auto;
+    width: 60em;
+        height: 40em;
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: white;
     padding: 2em;
-    border-radius: 1em;
+        border-radius: 1em;
+        float: left;
+        overflow-x: auto;
+    }
+    
+    .popup-book {
+    background-color: white;
+    column-gap: 4em;
+    padding: 2em;
+    column-width: 26em;
+        height: 100%;
+        box-sizing: border-box;
 }

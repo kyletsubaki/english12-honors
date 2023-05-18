@@ -17,7 +17,8 @@ function Book({children, coverImage, title, position = [0, 0, 0], color }: {
     return (
         <section className={'book'} style={{
             transform: `translate(${position[0]}px, ${position[1]}px) rotate(${position[2]}deg)`,
-            backgroundColor: color
+            backgroundColor: color,
+            visibility: opened ? 'hidden' : undefined
         }}>
             <div className="cover" onClick={handleClick}>
                 <img src={coverImage} alt={title} className="cover-image" />
@@ -25,10 +26,12 @@ function Book({children, coverImage, title, position = [0, 0, 0], color }: {
             </div>
             {opened && <Portal>
                 <div className="background" onClick={() => setSelected(null)}></div>
-                <div className="content">
-                    <h2>{title}</h2>
-                    <img src={coverImage} alt={title} className="cover-image" />
-                    {children}
+                <div className="popup-book-container" style={{ backgroundColor: color }}>
+                    <div className="popup-book">
+                        <h2>{title}</h2>
+                        <img src={coverImage} alt={title} className="cover-image" />
+                        {children}
+                    </div>
                 </div>
             </Portal>}
         </section>
