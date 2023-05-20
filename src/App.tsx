@@ -2,11 +2,18 @@ import Bookshelf from './Bookshelf';
 import Book from './Book';
 import './App.css';
 
+function AutoLink(props: React.HTMLProps<HTMLAnchorElement>) {
+    return <a {...props}>{props.href}</a>;
+}
+
 function App() { 
     return (
         <main>
             <div className="nameplate-container">
-                <div className="nameplate">My son Bread, Kevin Pinecone, Kylie Soup-Pocky, Joshua Food<br/>CEOs of Xom.inc</div>
+                <div className="nameplate">{process.env.REACT_APP_FUNNY_NAMES
+                    ? <>My son Bread, Kevin Pinecone, Kylie Soup-Pocky, Joshua Food<br/>CEOs of Xom.inc</>
+                    : <>Mason Beard, Devin Ponciano, Kyle Tsubaki, Josiah Fu</>
+                }</div>
             </div>
             <Bookshelf>
                 <Book coverImage="internment.jpg" title="War Relocation Authority" color='#235b99' position={[40, 0, -15]}>
@@ -50,17 +57,17 @@ function App() {
                 </Book>
                 <Book coverImage="withey2018.png" title="Gene Allen" color='#63252a' position={[-20, 40, 10]}>
                     <p>
-                    Gene Allen was a Filipino person who grew up extremely poor in Philadelphia. He experienced the 
-                    hardships of being an Asian American. As he grew up he became interested in politics and even made 
-                    a committee for the Philippines in America. This committee later gained a position in the government 
-                    against the dictatorship of Marcos. This dictatorship kept the Philippines in a form of disarray 
-                    and corruption. Gene Allen’s committee hoped to bring light to this situation. After that, he 
-                    traveled to Hawaii to participate in an international convention in which he spread information 
-                    about the Filipino dictatorship and learned about the Filipino workers conditions. After hearing 
-                    about the conditions he and another FIlipino, Slime Domingo, attempted a coup in Hawaii for Filipino 
-                    workers while also creating the Katipunan ng mga Demokratikong Pilipino group. This group sought to 
-                    also defend Filipino workers rights. However, they were shot and killed by the Marcos dictatorship 
-                    while in Hawaii.    
+                        Gene Allen was a Filipino person who grew up extremely poor in Philadelphia. He experienced the 
+                        hardships of being an Asian American. As he grew up he became interested in politics and even made 
+                        a committee for the Philippines in America. This committee later gained a position in the government 
+                        against the dictatorship of Marcos. This dictatorship kept the Philippines in a form of disarray 
+                        and corruption. Gene Allen&rsquo;s committee hoped to bring light to this situation. After that, he 
+                        traveled to Hawaii to participate in an international convention in which he spread information 
+                        about the Filipino dictatorship and learned about the Filipino workers conditions. After hearing 
+                        about the conditions he and another FIlipino, Slime Domingo, attempted a coup in Hawaii for Filipino 
+                        workers while also creating the Katipunan ng mga Demokratikong Pilipino group. This group sought to 
+                        also defend Filipino workers rights. However, they were shot and killed by the Marcos dictatorship 
+                        while in Hawaii.    
                     </p>
                 </Book>
                 <Book coverImage="yujiIchioka.webp" title="Yuji Ichioka" color='#63252a' position={[-40, 15, -12]}>
@@ -84,7 +91,7 @@ function App() {
                 </Book>
                 <Book coverImage="peteryew.png" title="Peter Yew Beating" color='#63252a' position={[40, 15, 10]}>
                     <p>
-                        Peter Yew’s beating and the subsequent protests in 1975 represent an important moment of Asian
+                        Peter Yew&rsquo;s beating and the subsequent protests in 1975 represent an important moment of Asian
                         American resistance against police brutality. Yew, a Chinese American, was beaten by San
                         Francisco police officers, and his story quickly spread throughout the Asian American community,
                         leading to widespread outrage and protests. The protests were a rare display of Asian American
@@ -97,10 +104,10 @@ function App() {
                         of Asian Americans in standing up against injustice demonstrated their resilience,
                         determination, and solidarity in the face of adversity. It was a powerful moment that shed light
                         on the need for social change and paved the way for greater awareness and advocacy for the
-                        rights and well-being of Asian Americans.Yew’s story is just one example of the many instances
+                        rights and well-being of Asian Americans.Yew&rsquo;s story is just one example of the many instances
                         of police brutality and mistreatment of Asian Americans that have been documented throughout
                         American history, from the Chinese Massacre of 1871 to the Vincent Chin case in 1982. However,
-                        Yew’s case and the resulting protests played an important role in raising awareness about the
+                        Yew&rsquo;s case and the resulting protests played an important role in raising awareness about the
                         issue and encouraging other Asian Americans to speak out against injustice. Today, the fight
                         against police brutality and racial discrimination continues, with recent incidents like the
                         killing of George Floyd and the rise in anti-Asian hate crimes serving as a reminder of the
@@ -133,19 +140,18 @@ function App() {
                 </Book>
                 <Book coverImage="aapa.png" title="Model Minority" color='#235b99' position={[35, 5, 10]}>
                     <p>
-                        The US wanted to be on good terms with China because they were allies against Japan, so they
-                        "recast" Chinese Americans to be "model minorities" to repeal laws like the Chinese Exclusion
-                        Act. Korean and Japanese immigrants continued to be stereotyped as model minorities even though
-                        the government became hostile to Chinese Americans and later Vietnamese due to the Vietnam War.
-                        The idea of "model minority" was later used to delegitimize the black civil rights movement.
-                        Contrary to these stereotypes, Asian communities had actually faced challenges and didn't like
-                        the "model minority" stereotype. Emma Gee and Yugi Ichioka wanted to unify Asian immigrants
-                        around a common identity and the common experience of marginalization, which led to the Asian
-                        American Movement.
+                        During the 1940s, the US allied with China against Japan, so they "recast" Chinese Americans to
+                        be "model minorities" to repeal laws like the Chinese Exclusion Act. After the war had ended,
+                        Japanese Americans previously in internnent camps were encouraged to integrate quietly back in
+                        to society. Korean and Japanese immigrants continued to be stereotyped as model minorities even
+                        though the government became hostile to Japanese Americans and later Vietnamese due to the
+                        Vietnam War. The idea of "model minority" was later used to delegitimize the black civil rights
+                        movement. Contrary to these stereotypes, Asian communities had actually faced challenges and
+                        didn't like the "model minority" stereotype.
                     </p>
                 </Book>
                 <Book coverImage="pickets.png" title="Third World Revolution" color='#435c4c' position={[0, 30, -15]}>
-                    <p>
+                    {/*<p>
                         From 1968-1969, strikes were held calling for greater proportions of colored students and
                         faculty, with Asian Americans among them. For example, at San Francisco State, the AAPA,
                         Intercollegiate Chinese for Social Action, and Pilipino-American Collegiate Endeavour banded
@@ -154,32 +160,51 @@ function App() {
                         publicized and countered the popular depiction of Asian Americans as quiet minorities. The
                         strikes also inspired students and activists to fight for the preservation of Asian American
                         neighborhoods.
+                    </p>*/}
+                    <p>
+                        {/*The Third World Revolution represented a shift in the way people of color organized and fought
+                        against systemic racism and oppression in the United States. This movement recognized that the
+                        struggles faced by Asian Americans, African Americans, Latinx Americans, and Native Americans
+                        were not separate but interconnected. This recognition led to greater solidarity and unity among
+                        people of color, and Asian Americans played an important role in this movement.*/}
+                        The Third World Revolution was a movement that brought together many ethnicities to to fight
+                        against systemic racism and oppression. One part of the movement was strikes at major
+                        universities like San Francisco State and UC Berkeley protesting for more minority faculty and
+                        students. This was one of the first times Asian groups banded together under the banner of
+                        "Asian American", marking the beginning of a united fight for freedom. For example, at San
+                        Francisco State the AAPA, Intercollegiate Chinese for Social Action, and Pilipino-American
+                        Collegiate Endeavour made up the Asian American section of the strike. At UC Berkeley, these
+                        strikes led to the creation of a department of Ethnic Studies, although protesters saw this as
+                        the faculty just trying to stop the strike and continued protesting for a Third World College.
+                        The movement also included protesting events such as the US's involvement in the Vietnam War and
+                        fighting for the preservation of Asian American neighborhoods. These activists did manage to get
+                        governments to provide money for residents, businesses, and community groups in these
+                        neighborhoods to relocate, and were able to delay and prevent some evictions. These are examples
+                        of the Third World Revolution and how they fought against systemic racism.
                     </p>
-                    <p>[TO BE EXPANDED]</p>
                 </Book>
-                <Book title="Bibliography" color='#235b99' position={[0, 45, 10]}>
+                <Book title="Bibliography" color='#768b99' position={[0, 45, 10]}>
                     <div className="bibliography">
-                        <p>Seattle's Asian American Movement - Seattle Civil Rights and Labor History Project, https://depts.washington.edu/civilr/aa_intro.htm. Accessed 3 May 2023.</p>
-                        <p>“An Alternative History of American Immigration.” Libertarianism.org, 31 March 2020, https://www.libertarianism.org/essays/alternative-history-american-immigration. Accessed 3 May 2023.</p>
-                        <p>“Asian Americans Then and Now.” Asia Society, https://asiasociety.org/education/asian-americans-then-and-now. Accessed 3 May 2023.</p>
-                        <p>“Asian Americans Then and Now.” Asia Society, https://asiasociety.org/education/asian-americans-then-and-now. Accessed 3 May 2023.</p>
-                        <p>Chen, Michelle. “Making and Unmaking the Asian American Movement.” Asian American Writers' Workshop, 17 November 2016, https://aaww.org/asian-american-movement/. Accessed 7 May 2023.</p>
-                        <p>De Leon, Adrian. “The long history of racism against Asian Americans in the U.S.” PBS, 9 April 2020, https://www.pbs.org/newshour/nation/the-long-history-of-racism-against-asian-americans-in-the-u-s. Accessed 3 May 2023.</p>
-                        <p>“FBI Records: The Vault — Richard Matsui Aoki.” FBI Vault, https://vault.fbi.gov/richard-m.-aoki. Accessed 9 May 2023.</p>
-                        <p>Gonzales, Richard. “Did Man Who Armed Black Panthers Lead Two Lives?” NPR, 3 October 2012, https://www.npr.org/2012/10/03/161408561/did-man-who-armed-black-panthers-lead-two-lives. Accessed 9 May 2023.</p>
-                        <p>Gross, Larry, and Walter P. Reuther. “Workers United: The Delano Grape Strike and Boycott (U.S.” National Park Service, 19 December 2022, https://www.nps.gov/articles/000/workers-united-the-delano-grape-strike-and-boycott.htm. Accessed 4 May 2023.</p>
-                        <p>Hamblin, Lawrence. “The social and political activism of the Asian American movement.” ScholarBlogs, 4 May 2021, https://scholarblogs.emory.edu/woodruff/news/the-social-and-political-activism-of-the-asian-american-movement. Accessed 3 May 2023.</p>
-                        <p>“Inventing the “Model Minority”: A Critical Timeline and Reading List.” Densho, 15 December 2021, https://densho.org/catalyst/inventing-the-model-minority-a-critical-timeline-and-reading-list/. Accessed 7 May 2023.</p>
-                        <p>Jimenez, Monica. “How Asian Americans Have Influenced Popular Culture.” Tufts Now, 18 May 2022, https://now.tufts.edu/2022/05/18/how-asian-americans-have-influenced-popular-culture. Accessed 3 May 2023.</p>
-                        <p>Kim, Inga. “The 1965-1970 Delano Grape Strike and Boycott - UFW.” UFW, 7 March 2017, https://ufw.org/1965-1970-delano-grape-strike-boycott/. Accessed 4 May 2023.</p>
-                        <p>Lange, Dorothea. “Horse Stall Housing, Spoiled Ham, and Other Stories of Life in Tanforan.” Densho, 25 August 2022, https://densho.org/catalyst/stories-of-life-in-tanforan/. Accessed 9 May 2023.</p>
-                        <p>Lee , Corky. “Our History.” Asian Americans for Equality, https://www.aafe.org/who-we-are/our-history. Accessed 3 May 2023.</p>
-                        <p>“Martial Law Heroes and Martyrs - VIERNES, Gene Allen.” pinkpedia, https://pinkpedia.org/wiki/Martial_Law_Heroes_and_Martyrs_-_VIERNES,_Gene_Allen. Accessed 3 May 2023.</p>
-                        <p>Mejia, Cynthia. “Filipino labor activists Gene Viernes and Silme Domingo are slain in Seattle on June 1, 1981.” HistoryLink.org, 3 December 1998, https://www.historylink.org/File/412. Accessed 3 May 2023.</p>
-                        <p>Mineo, Liz. “A long history of bigotry against Asian Americans.” Harvard Gazette, 24 March 2021, https://news.harvard.edu/gazette/story/2021/03/a-long-history-of-bigotry-against-asian-americans/. Accessed 3 May 2023.</p>
-                        <p>Myer, Dillon S. “The War Relocation Authority & the Incarceration of Japanese-Americans During World War II | Harry S. Truman.” Truman Library, https://www.trumanlibrary.gov/library/online-collections/war-relocation-authority-and-incarceration-of-japanese-americans. Accessed 9 May 2023.</p>
-                        <p>Wallace, Nina. “Yellow Power: The Origins of Asian America.” Densho, 8 May 2017, https://densho.org/catalyst/asian-american-movement/. Accessed 3 May 2023.</p>
-                        <p>Zheng, Lily. “To Dismantle Anti-Asian Racism, We Must Understand Its Roots.” Harvard Business Review, 27 May 2021, https://hbr.org/2021/05/to-dismantle-anti-asian-racism-we-must-understand-its-roots. Accessed 6 May 2023.</p>
+                        <p>Seattle's Asian American Movement - Seattle Civil Rights and Labor History Project, <AutoLink href="https://depts.washington.edu/civilr/aa_intro.htm" />. Accessed 3 May 2023.</p>
+                        <p>“An Alternative History of American Immigration.” Libertarianism.org, 31 March 2020, <AutoLink href="https://www.libertarianism.org/essays/alternative-history-american-immigration" />. Accessed 3 May 2023.</p>
+                        <p>“Asian Americans Then and Now.” Asia Society, <AutoLink href="https://asiasociety.org/education/asian-americans-then-and-now" />. Accessed 3 May 2023.</p>
+                        <p>Chen, Michelle. “Making and Unmaking the Asian American Movement.” Asian American Writers' Workshop, 17 November 2016, <AutoLink href="https://aaww.org/asian-american-movement/" />. Accessed 7 May 2023.</p>
+                        <p>De Leon, Adrian. “The long history of racism against Asian Americans in the U.S.” PBS, 9 April 2020, <AutoLink href="https://www.pbs.org/newshour/nation/the-long-history-of-racism-against-asian-americans-in-the-u-s" />. Accessed 3 May 2023.</p>
+                        <p>“FBI Records: The Vault - Richard Matsui Aoki.” FBI Vault, <AutoLink href="https://vault.fbi.gov/richard-m.-aoki" />. Accessed 9 May 2023.</p>
+                        <p>Gonzales, Richard. “Did Man Who Armed Black Panthers Lead Two Lives?” NPR, 3 October 2012, <AutoLink href="https://www.npr.org/2012/10/03/161408561/did-man-who-armed-black-panthers-lead-two-lives" />. Accessed 9 May 2023.</p>
+                        <p>Gross, Larry, and Walter P. Reuther. “Workers United: The Delano Grape Strike and Boycott (U.S.” National Park Service, 19 December 2022, <AutoLink href="https://www.nps.gov/articles/000/workers-united-the-delano-grape-strike-and-boycott.htm" />. Accessed 4 May 2023.</p>
+                        <p>Hamblin, Lawrence. “The social and political activism of the Asian American movement.” ScholarBlogs, 4 May 2021, <AutoLink href="https://scholarblogs.emory.edu/woodruff/news/the-social-and-political-activism-of-the-asian-american-movement" />. Accessed 3 May 2023.</p>
+                        <p>“Inventing the “Model Minority”: A Critical Timeline and Reading List.” Densho, 15 December 2021, <AutoLink href="https://densho.org/catalyst/inventing-the-model-minority-a-critical-timeline-and-reading-list/" />. Accessed 7 May 2023.</p>
+                        <p>Jimenez, Monica. “How Asian Americans Have Influenced Popular Culture.” Tufts Now, 18 May 2022, <AutoLink href="https://now.tufts.edu/2022/05/18/how-asian-americans-have-influenced-popular-culture" />. Accessed 3 May 2023.</p>
+                        <p>Kim, Inga. “The 1965-1970 Delano Grape Strike and Boycott - UFW.” UFW, 7 March 2017, <AutoLink href="https://ufw.org/1965-1970-delano-grape-strike-boycott/" />. Accessed 4 May 2023.</p>
+                        <p>Lange, Dorothea. “Horse Stall Housing, Spoiled Ham, and Other Stories of Life in Tanforan.” Densho, 25 August 2022, <AutoLink href="https://densho.org/catalyst/stories-of-life-in-tanforan/" />. Accessed 9 May 2023.</p>
+                        <p>Lee , Corky. “Our History.” Asian Americans for Equality, <AutoLink href="https://www.aafe.org/who-we-are/our-history" />. Accessed 3 May 2023.</p>
+                        <p>“Martial Law Heroes and Martyrs - VIERNES, Gene Allen.” pinkpedia, <AutoLink href="https://pinkpedia.org/wiki/Martial_Law_Heroes_and_Martyrs_-_VIERNES,_Gene_Allen" />. Accessed 3 May 2023.</p>
+                        <p>Mejia, Cynthia. “Filipino labor activists Gene Viernes and Silme Domingo are slain in Seattle on June 1, 1981.” HistoryLink.org, 3 December 1998, <AutoLink href="https://www.historylink.org/File/412" />. Accessed 3 May 2023.</p>
+                        <p>Mineo, Liz. “A long history of bigotry against Asian Americans.” Harvard Gazette, 24 March 2021, <AutoLink href="https://news.harvard.edu/gazette/story/2021/03/a-long-history-of-bigotry-against-asian-americans/" />. Accessed 3 May 2023.</p>
+                        <p>Myer, Dillon S. “The War Relocation Authority & the Incarceration of Japanese-Americans During World War II | Harry S. Truman.” Truman Library, <AutoLink href="https://www.trumanlibrary.gov/library/online-collections/war-relocation-authority-and-incarceration-of-japanese-americans" />. Accessed 9 May 2023.</p>
+                        <p>Wallace, Nina. “Yellow Power: The Origins of Asian America.” Densho, 8 May 2017, <AutoLink href="https://densho.org/catalyst/asian-american-movement/" />. Accessed 3 May 2023.</p>
+                        <p>Zheng, Lily. “To Dismantle Anti-Asian Racism, We Must Understand Its Roots.” Harvard Business Review, 27 May 2021, <AutoLink href="https://hbr.org/2021/05/to-dismantle-anti-asian-racism-we-must-understand-its-roots" />. Accessed 6 May 2023.</p>
                     </div>
                 </Book>
             </Bookshelf>
