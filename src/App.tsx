@@ -152,29 +152,17 @@ function App() {
                         reminder of the ongoing struggle for justice. 
                     </p>
                 </Book>
-                <Book coverImage="chinatown.jpg" title="9/11 and Racism/Shootings" color='#435c4c' position={[60, 5, -5]}>
-                    <p> Nate saw Jacob Bates<br/>
-                        As he ate the last Pancake<br/>
-                        His mate thought it was a mistake<br/>
-                        Nate saw Jacob Bates<br/><br/>
-
-                        He came home very late<br/>
-                        Jacob Bates deserved the worst fate.<br/>
-                        Nate thought it was a mistake.<br/>
-                        Nate saw Jacob Bates.<br/><br/>
-
-                        Sheraz thought it was great<br/>
-                        That Nate's remains were on a plate<br/>
-                        Jacob smuggled them through a gate<br/>
-                        alas, it was much too late,<br/>
-                        for nate the great,<br/>
-                        to make his great escape<br/><br/>
-
-                        Sheraz got out without a scrape,<br/>
-                        but the great nate ate his last grape<br/>
-                        he did not deserve this horrid fate<br/>
-                        but now his scraps are in a crate<br/>
-                        Nate saw Jacob Bates</p>
+                <Book coverImage="911.jpg" title="9/11 and Racism/Shootings" color='#435c4c' position={[60, 5, -5]}>
+                    <p>
+                        After the events of 9/11, the people of the US were scared that there would be more terrorist
+                        attacks, which caused an uproar of racism. In a local gas station in Texas, Vasudev Patel was
+                        shot and killed by Mark Stroman as he was working. Mark Stroman’s intent for the murder was that
+                        Patel was of Middle Eastern descent. Several other people were murdered including Waqar Hasan, a
+                        Pakistani immigrant, and Rais Bhuiyan, an immigrant from Bangladesh. These people were murdered
+                        in cold blood just because of their skin. Even the killer himself admitted that this was all
+                        because of the events that occurred during 9/11. He was sentenced as the 1,262nd death row
+                        prisoner and executed on July 20, 2011 through lethal injection.
+                    </p>
                 </Book>
                 <Book coverImage="aapa.png" title="Model Minority" color='#235b99' position={[35, 5, 10]}>
                     <p>
