@@ -25,49 +25,83 @@ function App() {
                         improvement that the Japanese here have made here at Tanforan. When we first arrived the side of
                         the lake was only an unattractive, dried-up hole in the ground. The men built up its sides,
                         planted trees, made a picturesque arbor, and as the crowning achievement, built a marvelous
-                        bridge… out of logs in &rsquo;neither American nor Japanese but in typical Tanforan style.&lsquo; It was
+                        bridge… out of logs in ‘neither American nor Japanese but in typical Tanforan style.’ It was
                         then filled with water, and the end result was a transformation which seemed to be little short
-                        of a miracle.”
+                        of a miracle.” There was no plumbing and there were six feet high snow drifts in some camps. As
+                        Richard Aoki puts it, the food was “atrocious”. Medical supplies were low in the camps because
+                        the war took priority. Protesters on the outside would go to jail. People were able to work, and
+                        would get paid $16/month. These people were told that they were being protected, yet the barb
+                        wire poked inward, guard towers watched them, and had half tracks blocking them from leaving.
+                        The Japanese American community lost more than 6 billion dollars when properties were
+                        confiscated.
                     </p>
                 </Book>
                 <Book coverImage="richardAoki.webp" title="Richard Aoki" color='#63252a' position={[0, 10, 0]}>
                     <p>
                         Richard Aoki was a Japanese-American Activist that was a part of a group called the Black
-                        Panther Party. He provided this group with guns and the group was considered a “threat to
-                        internal security”. The group&rsquo;s goal was the end of police brutality and murder of black people.
-                        They wanted to police the police, since they were made up of mostly white men. He was able to
-                        sue the FBI five times to get 300,000 pages of heavily redacted documents. He was accused of
-                        being an FBI informant, yet people don&rsquo;t know if it really is true.
+                        Panther Party. He is a 3rd generation born citizen and was sent to the internment camps at the
+                        age of 5. He always thought the internment camps were how the world looked like, and never knew
+                        an actual house until the age of 9. His family moved to Oakland with his grandparents. He was
+                        not the best kid. He would pickpocket and steal from shops. In Oakland, there is a longstanding
+                        African American population due to the railroads. He heard about all of the stories about
+                        lynchings, and Aoki wanted to make a difference. During the cold war, he joined the military
+                        because every male was expected to serve. As he continued to serve, he found his beliefs for
+                        fighting in the vietnam war were against his. When he left, he found the Black Panther Party. At
+                        first, he didn’t feel like he was right for it. Saying, “"I know you two guys are crazy, 'cuz we
+                        drafted the program together. Are you blind as well? I'm not Black." The BPP was a radical group
+                        with the ideology of removing police brutality from the US, but their methods were considered
+                        “terrorist-like”. They wanted to police the police, since they were made up of mostly white men.
+                        This group committed over 500 different crimes which consisted of dramatic demonstrations and
+                        news conferences, shootouts, police raids, arrests, hijackings, trials, and murders. He provided
+                        this group with guns and the group was considered a “threat to internal security”. He was able
+                        to sue the FBI five times to get 300,000 pages of heavily redacted documents. He was accused of
+                        being an FBI informant, yet people don’t know if it really is true.
                     </p>
                 </Book>
                 <Book coverImage="dbm2013.png" title="Delano Grape Strike" color='#235b99' position={[0, 10, 0]}>
                     <p>
-                        In 1965, Filipino farmworkers in Delano, California went on strike, demanding a raise in hourly
-                        wages and piece rates. The strike was led by Larry Itliong and Ben Gines of the Agricultural
-                        Workers Organizing Committee (AWOC). The National Farm Workers Association (NFWA), led by Cesar
-                        Chavez, also joined the strike after a vote. Even after being threatened and attacked, the
-                        farmworkers continued in their strike, and the NFWA did a consumer boycott campaign which
-                        pressured growers into recognizing the NFWA as a union. This union advocated for actual wages,
-                        medical care, and places to live. Before the union gained power some workers had people living
-                        without electricity, running water, or toilets, and often lived in their own cars. This struggle
-                        for farmworker rights ultimately became part of a larger movement for civil rights and social
-                        justice. It was a joint effort between both Hispanic Americans and Filipino Americans that
-                        ultimately impacted the entirety of the agricultural economy in favor of the workers. 
+                        In 1965, farmworkers in Delano, California went on strike. Many of these workers were Filipino
+                        people. They were demanding higher wages and fairer pay for their work. Larry Itliong and Ben
+                        Gines, leaders of the Agricultural Workers Organizing Committee (AWOC), led the strike.
+                        Eventually, another group, the National Farm Workers Association (NFWA), led by Cesar Chavez,
+                        joined the strike. Despite facing threats and violence, the farmworkers of both AWOC and NFWA
+                        continued to strike. The NFWA launched a boycott campaign, urging people not to buy products
+                        from growers who mistreated their workers. This put pressure on the growers to recognize the
+                        NFWA as a legitimate union and negotiate with them. The union fought for more than just better
+                        wages. They also fought for things like healthcare, decent housing, and fair working conditions.
+                        To make their voices heard, union members refused to work and created picket lines. They held
+                        signs saying things like "Boycott California Grapes" and "Huelga" (which means "strike" in
+                        Spanish). Before the union gained power, many farmworkers lived in extreme poverty. They lacked
+                        basic necessities like electricity, running water, and proper toilets. Some of them even lived
+                        in their cars. This struggle for farmworker rights became part of a larger movement for civil
+                        rights and social justice. Hispanic Americans and Filipino Americans worked together and made a
+                        lasting impact on the agricultural industry in favor of the workers across the entire country. 
                     </p>
                 </Book>
                 <Book coverImage="withey2018.png" title="Gene Allen" color='#63252a' position={[-20, 40, 10]}>
                     <p>
-                        Gene Allen was a Filipino person who grew up extremely poor in Philadelphia. He experienced the 
-                        hardships of being an Asian American. As he grew up he became interested in politics and even made 
-                        a committee for the Philippines in America. This committee later gained a position in the government 
-                        against the dictatorship of Marcos. This dictatorship kept the Philippines in a form of disarray 
-                        and corruption. Gene Allen&rsquo;s committee hoped to bring light to this situation. After that, he 
-                        traveled to Hawaii to participate in an international convention in which he spread information 
-                        about the Filipino dictatorship and learned about the Filipino workers conditions. After hearing 
-                        about the conditions he and another FIlipino, Slime Domingo, attempted a coup in Hawaii for Filipino 
-                        workers while also creating the Katipunan ng mga Demokratikong Pilipino group. This group sought to 
-                        also defend Filipino workers rights. However, they were shot and killed by the Marcos dictatorship 
-                        while in Hawaii.    
+                        Gene Allen, a Filipino individual, grew up in poverty in Philadelphia and faced the challenges
+                        that come with being an Asian American. As he aged he gained an interest in politics, and
+                        eventually he established a committee dedicated to the Filipino cause in America. This committee
+                        was known as the "Rank and File" committee and sought to improve the conditions of Filipino
+                        people on several fronts like workforce or representation. Over time, this committee gained
+                        recognition and influence, particularly in opposition to the dictatorship of Ferdinand Marcos in
+                        the Philippines. Marcos's leadership was filled with corruption and led the country of the
+                        Philippines into near ruin. Gene Allen's committee aimed to shed light on the dire situation in
+                        the Philippines under Marcos's rule. As part of Gene Allen’s efforts, he traveled to Hawaii to
+                        participate in an international convention. During this event, he not only raised awareness
+                        about the Filipino dictatorship but also gained firsthand knowledge of the conditions faced by
+                        Filipino workers. As a result, Gene Allen, along with another Filipino activist named Slime
+                        Domingo, decided to take action to create better conditions for Filipino people, similar to Gene
+                        Allen's "Rank and File" committee. Together, they attempted a coup in Hawaii, seeking to bring
+                        about change and improve the rights and welfare of Filipino workers. Additionally, they formed
+                        the Katipunan ng mga Demokratikong Pilipino, a group dedicated to defending the rights of
+                        Filipino workers. However, their attempt was met with a violent response from the Marcos
+                        dictatorship. While in Hawaii, Gene Allen and Slime Domingo were shot and killed, this
+                        transformed them from activists to martyrs. Gene Allen's story serves as a testament to the
+                        power of individuals to make a difference, even in the face of great adversity. His unwavering
+                        commitment to justice and his passion for the welfare of Filipino workers continue to inspire
+                        others in their own pursuits for a more equitable society.
                     </p>
                 </Book>
                 <Book coverImage="yujiIchioka.webp" title="Yuji Ichioka" color='#63252a' position={[-40, 15, -12]}>
