@@ -47,7 +47,7 @@ function App() {
                         lynchings, and Aoki wanted to make a difference. During the cold war, he joined the military
                         because every male was expected to serve. As he continued to serve, he found his beliefs for
                         fighting in the vietnam war were against his. When he left, he found the Black Panther Party. At
-                        first, he didn’t feel like he was right for it. Saying, “"I know you two guys are crazy, 'cuz we
+                        first, he didn’t feel like he was right for it. Saying, "I know you two guys are crazy, 'cuz we
                         drafted the program together. Are you blind as well? I'm not Black." The BPP was a radical group
                         with the ideology of removing police brutality from the US, but their methods were considered
                         “terrorist-like”. They wanted to police the police, since they were made up of mostly white men.
