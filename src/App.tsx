@@ -35,6 +35,54 @@ function App() {
                     </p>
                 </Book>
 
+                <Book coverImage="pickets.png" title="Third World Revolution" color='#435c4c' position={[0, 30, -15]}>
+                    {/*<p>
+                        From 1968-1969, strikes were held calling for greater proportions of colored students and
+                        faculty, with Asian Americans among them. For example, at San Francisco State, the AAPA,
+                        Intercollegiate Chinese for Social Action, and Pilipino-American Collegiate Endeavour banded
+                        together to represent Asian Americans in the strike. Another strike happened at UC Berkeley.
+                        They also protested events such as US involvement in the Vietnam War. These strikes were
+                        publicized and countered the popular depiction of Asian Americans as quiet minorities. The
+                        strikes also inspired students and activists to fight for the preservation of Asian American
+                        neighborhoods.
+                    </p>*/}
+                    <p>
+                        {/*The Third World Revolution represented a shift in the way people of color organized and fought
+                        against systemic racism and oppression in the United States. This movement recognized that the
+                        struggles faced by Asian Americans, African Americans, Latinx Americans, and Native Americans
+                        were not separate but interconnected. This recognition led to greater solidarity and unity among
+                        people of color, and Asian Americans played an important role in this movement.*/}
+                        The Third World Revolution was a movement that brought together many ethnicities to to fight
+                        against systemic racism and oppression. One part of the movement was strikes at major
+                        universities like San Francisco State and UC Berkeley protesting for more minority faculty and
+                        students. This was one of the first times Asian groups banded together under the banner of
+                        &ldquo;Asian American&rdquo;, marking the beginning of a united fight for freedom. For example,
+                        at San Francisco State the AAPA, Intercollegiate Chinese for Social Action, and
+                        Pilipino-American Collegiate Endeavour made up the Asian American section of the strike. At UC
+                        Berkeley, these strikes led to the creation of a department of Ethnic Studies, although
+                        protesters saw this as the faculty just trying to stop the strike and continued protesting for a
+                        Third World College. The movement also included protesting events such as the US&rsquo;s
+                        involvement in the Vietnam War and fighting for the preservation of Asian American
+                        neighborhoods. These activists did manage to get governments to provide money for residents,
+                        businesses, and community groups in these neighborhoods to relocate, and were able to delay and
+                        prevent some evictions. These are examples of the Third World Revolution and how they fought
+                        against systemic racism.
+                    </p>
+                    <img src="third_world_revolution_2.png" alt="Third World Revolution" className="content-image" />
+                </Book>
+                <Book coverImage="aapa.png" title="Model Minority" color='#235b99' position={[35, 5, 10]}>
+                    <p>
+                        During the 1940s, the US allied with China against Japan, so they &ldquo;recast&rdquo; Chinese
+                        Americans to be &ldquo;model minorities&rdquo; to repeal laws like the Chinese Exclusion Act.
+                        After the war had ended, Japanese Americans previously in internnent camps were encouraged to
+                        integrate quietly back in to society. Korean and Japanese immigrants continued to be stereotyped
+                        as model minorities even though the government became hostile to Japanese Americans and later
+                        Vietnamese due to the Vietnam War. The idea of &ldquo;model minority&rdquo; was later used to
+                        delegitimize the black civil rights movement. Contrary to these stereotypes, Asian communities
+                        had actually faced challenges and didn&rsquo;t like the &ldquo;model minority&rdquo; stereotype.
+                    </p>
+                    <img src="model_minority_2.png" alt="Model Minority" className="content-image" />
+                </Book>
                 <Book coverImage="yujiIchioka.webp" title="Yuji Ichioka" color='#63252a' position={[40, 0, -10]}>
                     <p>
                         Yuji Ichioka was born in California in 1936 to a family of Japanese immigrants. Growing up, he
@@ -209,54 +257,6 @@ function App() {
                         this murder and shows how the government hides important events like these.
                     </p>
                     <img src="9_11_2.png" alt="9/11" className="content-image" />
-                </Book>
-                <Book coverImage="aapa.png" title="Model Minority" color='#235b99' position={[35, 5, 10]}>
-                    <p>
-                        During the 1940s, the US allied with China against Japan, so they &ldquo;recast&rdquo; Chinese
-                        Americans to be &ldquo;model minorities&rdquo; to repeal laws like the Chinese Exclusion Act.
-                        After the war had ended, Japanese Americans previously in internnent camps were encouraged to
-                        integrate quietly back in to society. Korean and Japanese immigrants continued to be stereotyped
-                        as model minorities even though the government became hostile to Japanese Americans and later
-                        Vietnamese due to the Vietnam War. The idea of &ldquo;model minority&rdquo; was later used to
-                        delegitimize the black civil rights movement. Contrary to these stereotypes, Asian communities
-                        had actually faced challenges and didn&rsquo;t like the &ldquo;model minority&rdquo; stereotype.
-                    </p>
-                    <img src="model_minority_2.png" alt="Model Minority" className="content-image" />
-                </Book>
-                <Book coverImage="pickets.png" title="Third World Revolution" color='#435c4c' position={[0, 30, -15]}>
-                    {/*<p>
-                        From 1968-1969, strikes were held calling for greater proportions of colored students and
-                        faculty, with Asian Americans among them. For example, at San Francisco State, the AAPA,
-                        Intercollegiate Chinese for Social Action, and Pilipino-American Collegiate Endeavour banded
-                        together to represent Asian Americans in the strike. Another strike happened at UC Berkeley.
-                        They also protested events such as US involvement in the Vietnam War. These strikes were
-                        publicized and countered the popular depiction of Asian Americans as quiet minorities. The
-                        strikes also inspired students and activists to fight for the preservation of Asian American
-                        neighborhoods.
-                    </p>*/}
-                    <p>
-                        {/*The Third World Revolution represented a shift in the way people of color organized and fought
-                        against systemic racism and oppression in the United States. This movement recognized that the
-                        struggles faced by Asian Americans, African Americans, Latinx Americans, and Native Americans
-                        were not separate but interconnected. This recognition led to greater solidarity and unity among
-                        people of color, and Asian Americans played an important role in this movement.*/}
-                        The Third World Revolution was a movement that brought together many ethnicities to to fight
-                        against systemic racism and oppression. One part of the movement was strikes at major
-                        universities like San Francisco State and UC Berkeley protesting for more minority faculty and
-                        students. This was one of the first times Asian groups banded together under the banner of
-                        &ldquo;Asian American&rdquo;, marking the beginning of a united fight for freedom. For example,
-                        at San Francisco State the AAPA, Intercollegiate Chinese for Social Action, and
-                        Pilipino-American Collegiate Endeavour made up the Asian American section of the strike. At UC
-                        Berkeley, these strikes led to the creation of a department of Ethnic Studies, although
-                        protesters saw this as the faculty just trying to stop the strike and continued protesting for a
-                        Third World College. The movement also included protesting events such as the US&rsquo;s
-                        involvement in the Vietnam War and fighting for the preservation of Asian American
-                        neighborhoods. These activists did manage to get governments to provide money for residents,
-                        businesses, and community groups in these neighborhoods to relocate, and were able to delay and
-                        prevent some evictions. These are examples of the Third World Revolution and how they fought
-                        against systemic racism.
-                    </p>
-                    <img src="third_world_revolution_2.png" alt="Third World Revolution" className="content-image" />
                 </Book>
                 <Book title="Conclusion" color='#235b99' position={[0, 45, 10]}>
                     <p>
