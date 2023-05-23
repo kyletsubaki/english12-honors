@@ -1,9 +1,15 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: 45em;
-    width: 90.5em;
+    width: 100em;
+    /*
+        grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 47em;
+    width: 50em;
+*/
     gap: 2em;
 }
 
@@ -13,10 +19,20 @@
     object-fit: cover;
 }
 
+.content-image {
+    width: 100%;
+}
+
+/* .cover h2 {
+    font-size: 0.9em;
+} */
+
 .cover {
     cursor: pointer;
     padding: 2em;
-    border-radius: 0 1em 1em 0;
+    border-radius: 2px 1em 1em 2px;
+    /* padding: 1.5em;
+    border-radius: 0 0.75em 0.75em 0; */
     box-sizing: border-box;
     height: 100%;
     box-shadow: 2px -2px 2px #0003 inset, -2px 2px 2px #fff3 inset, -8px -8px 8px #0005;
@@ -158,4 +174,29 @@
 
 .bibliography p {
     text-indent: 2em hanging;
+}
+
+.top-left-image, .top-left-image-2, .top-right-image {
+    position: absolute;
+    z-index: -1;
+}
+
+.top-right-image {
+    right: 2em;
+    top: 2em;
+    width: 8em;
+    transform: rotate(-35deg);
+}
+
+.top-left-image {
+    left: 1em;
+    top: -2em;
+    width: 24em;
+    transform: rotate(12deg);
+}
+
+
+.top-left-image-2 {
+  width: 8em;
+  transform: translate(5em) rotate(-90deg);
 }

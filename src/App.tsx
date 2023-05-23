@@ -6,58 +6,88 @@ function AutoLink(props: React.HTMLProps<HTMLAnchorElement>) {
     return <a {...props}>{props.href}</a>;
 }
 
-function App() { 
+function App() {
     return (
         <main>
             <div className="nameplate-container">
                 <div className="nameplate">{process.env.REACT_APP_FUNNY_NAMES
-                    ? <>My son Bread, Kevin Pinecone, Kylie Soup-Pocky, Joshua Food<br/>CEOs of Xom.inc</>
+                    ? <>My son Bread, Kevin Pinecone, Kylie Soup-Pocky, Joshua Food<br />CEOs of Xom.inc</>
                     : <>Mason Beard, Devin Ponciano, Kyle Tsubaki, Josiah Fu</>
                 }</div>
             </div>
             <Bookshelf>
-                <Book coverImage="internment.jpg" title="War Relocation Authority" color='#235b99' position={[40, 0, -15]}>
+                <Book title="Introduction" color='#435c4c' position={[40, 0, -15]}>
                     <p>
-                        During the second world war, the US government evicted over 120,000 Japanese Americans from the
-                        Pacific region. These people were sent to one of the ten camps, and were forced to live under
-                        the watch of guards and surrounded by barbed wire. Sometimes these people were forced into horse
-                        stalls and had to sleep on hay. As put by Yukiko Kimura, &ldquo;This lake was the outstanding
-                        improvement that the Japanese here have made here at Tanforan. When we first arrived the side of
-                        the lake was only an unattractive, dried-up hole in the ground. The men built up its sides,
-                        planted trees, made a picturesque arbor, and as the crowning achievement, built a marvelous
-                        bridge… out of logs in &lsquo;neither American nor Japanese but in typical Tanforan
-                        style.&rsquo; It was then filled with water, and the end result was a transformation which
-                        seemed to be little short of a miracle.&rdquo; There was no plumbing and there were six feet
-                        high snow drifts in some camps. As Richard Aoki puts it, the food was &ldquo;atrocious&rdquo;.
-                        Medical supplies were low in the camps because the war took priority. Protesters on the outside
-                        would go to jail. People were able to work, and would get paid $16/month. These people were told
-                        that they were being protected, yet the barb wire poked inward, guard towers watched them, and
-                        had half tracks blocking them from leaving. The Japanese American community lost more than 6
-                        billion dollars when properties were confiscated.
+                        The Asian American story is one of diverse experiences marked by both achievements and
+                        struggles. From the fight for civil rights to the quest for justice, Asian Americans have played
+                        a vital role in shaping the history of the United States. The contributions of notable figures
+                        such as Yuji Ichioka, Richard Aoki, Gene Allen, and Peter Yew, through their involvement in the
+                        Third World Revolution, the Delano Grape Strike, and the fight against police brutality in 1975
+                        vastly changed the lives of all people in America. Additionally, stigmas around 9/11 and Model
+                        Minorities offer significant examples of how Asian Americans have navigated the complexities of
+                        their existence in America. The Asian American story is a testament to the enduring spirit and
+                        resilience of a community that has triumphed over adversity, fought for justice, and contributed
+                        immeasurably to the vibrant change of American society. These events show the struggles for
+                        freedom and the extent Asian Americans had to suffer to achieve rights and equality. It also
+                        shows the effort that Asian American put forth for basic civil rights and liberties. The people,
+                        events, movements, and stigmas are the real stories of the struggles and efforts of Asian
+                        American people during the 20th and 21st century.
                     </p>
                 </Book>
+
+                <Book coverImage="yujiIchioka.webp" title="Yuji Ichioka" color='#63252a' position={[40, 0, -10]}>
+                    <p>
+                        Yuji Ichioka was born in California in 1936 to a family of Japanese immigrants. Growing up, he
+                        faced discrimination and racism due to his Japanese heritage. In the aftermath of World War II,
+                        Ichioka became interested in the experiences of Japanese Americans during the war. He went on to
+                        become a historian and activist, and his work focused on researching and documenting the
+                        internment of Japanese Americans. He also worked to uncover the experiences of Japanese American
+                        soldiers who fought for the United States during the war, despite their families being
+                        imprisoned in internment camps. Ichioka&rsquo;s efforts to increase awareness of the Japanese
+                        American experience led him to become an advocate for Asian American studies programs in
+                        universities. He was a founding member of the Asian American Political Alliance and the Asian
+                        American Studies Department at UCLA. His work was instrumental in helping to create a space for
+                        Asian American voices in academia and increasing awareness of the Asian American experience
+                        among the general public. Ichioka&rsquo;s contributions to the field of Asian American studies
+                        continue to be felt today. His work helped to establish the importance of Asian American history
+                        and experiences in the broader context of American history. Through his activism and
+                        scholarship, Ichioka left a lasting legacy that has helped to shape our understanding of the
+                        Asian American experience.
+                    </p>
+                    <img src="yuji_ichioka_2.png" alt="Yuji Ichioka" className="content-image" />
+                </Book>
+               
                 <Book coverImage="richardAoki.webp" title="Richard Aoki" color='#63252a' position={[0, 10, 0]}>
                     <p>
-                        Richard Aoki was a Japanese-American Activist that was a part of a group called the Black
-                        Panther Party. He is a 3rd generation born citizen and was sent to the internment camps at the
-                        age of 5. He always thought the internment camps were how the world looked like, and never knew
-                        an actual house until the age of 9. His family moved to Oakland with his grandparents. He was
-                        not the best kid. He would pickpocket and steal from shops. In Oakland, there is a longstanding
-                        African American population due to the railroads. He heard about all of the stories about
-                        lynchings, and Aoki wanted to make a difference. During the cold war, he joined the military
-                        because every male was expected to serve. As he continued to serve, he found his beliefs for
-                        fighting in the vietnam war were against his. When he left, he found the Black Panther Party. At
-                        first, he didn&rsquo;t feel like he was right for it. Saying, &ldquo;I know you two guys are
-                        crazy, &lsquo;cuz we drafted the program together. Are you blind as well? I&rsquo;m not
-                        Black.&rdquo; The BPP was a radical group with the ideology of removing police brutality from
-                        the US, but their methods were considered &ldquo;terrorist-like&rdquo;. They wanted to police
-                        the police, since they were made up of mostly white men. This group committed over 500 different
-                        crimes which consisted of dramatic demonstrations and news conferences, shootouts, police raids,
-                        arrests, hijackings, trials, and murders. He provided this group with guns and the group was
-                        considered a &ldquo;threat to internal security&rdquo;. He was able to sue the FBI five times to
-                        get 300,000 pages of heavily redacted documents. He was accused of being an FBI informant, yet
-                        people don&rsquo;t know if it really is true.
+                        Richard Aoki's involvement in the Black Panther Party was a huge example of how Asian Americans
+                        were active participants in the Third World Revolution. Richard Aoki was a Japanese-American
+                        Activist that was a part of a group called the Black Panther Party. He is a 3rd generation born
+                        citizen and was sent to the internment camps at the age of 5. He always thought the internment
+                        camps were how the world looked like, and never knew an actual house until the age of 9. He and
+                        other people were constantly called Or*****ls, Ch***s, and other inappropriate words. His family
+                        moved to Oakland with his grandparents. He was not the best kid. He would pickpocket and steal
+                        from shops. In Oakland, there is a longstanding African American population due to the
+                        railroads. He heard about all of the stories about lynchings, and Aoki wanted to make a
+                        difference. During the cold war, he joined the military because every male was expected to
+                        serve. As he continued to serve, he found his beliefs for fighting in the vietnam war were
+                        against his. When he left, he found the Black Panther Party. At first, he didn&rsquo;t feel like he
+                        was right for it. He said, “I know you two guys are crazy, 'cuz we drafted the program together.
+                        Are you blind as well? I'm not Black" (Aoki). The BPP was a radical group with the ideology of
+                        removing police brutality from the US, but their methods were considered “terrorist-like”. They
+                        wanted to police the police, since they were made up of mostly white men (National Archives).
+                        This group committed over 500 different crimes which consisted of dramatic demonstrations and
+                        news conferences, shootouts, police raids, arrests, hijackings, trials, and murders. (Gonzales).
+                        He provided this group with guns and the group was considered a “threat to internal security”.
+                        In 1969, he was arrested at Bancroft and Telegraph Avenue for openly displaying his gun . He was
+                        able to sue the FBI five times to get 300,000 pages of heavily redacted documents. He was
+                        accused of being an FBI informant, yet people don&rsquo;t know if it really is true (FBI Records).
+                        Aoki's contributions to the movement shows how the Asian American struggle was not isolated but
+                        part of a larger struggle for justice and equality for all people of color. His role in the
+                        Third World Revolution highlights the importance of people&rsquo;s efforts and push for social justice
+                        and equity. Aoki and the black panther party used their power to push for their rights and
+                        showed how they had the power to make active changes and enforce civil liberties. 
                     </p>
+                    <img src="richard_aoki_2.png" alt="Richard Aoki" className="content-image" />
                 </Book>
                 <Book coverImage="dbm2013.png" title="Delano Grape Strike" color='#235b99' position={[0, 10, 0]}>
                     <p>
@@ -77,10 +107,38 @@ function App() {
                         toilets. Some of them even lived in their cars. This struggle for farmworker rights became part
                         of a larger movement for civil rights and social justice. Hispanic Americans and Filipino
                         Americans worked together and made a lasting impact on the agricultural industry in favor of the
-                        workers across the entire country. 
+                        workers across the entire country.
                     </p>
+                    <img src="grape_strike_2.png" alt="Delano Grape Strike" className="content-image" />
                 </Book>
-                <Book coverImage="withey2018.png" title="Gene Allen" color='#63252a' position={[-20, 40, 10]}>
+                <Book coverImage="internment.jpg" title="War Relocation Authority" color='#235b99' position={[-20, 15, -12]}>
+                    <p>
+                        Another example that presents the struggle of freedom is when the US government enacted the
+                        Executive order 9066. This order allowed the US government to evict over 120,000 Japanese
+                        Americans from the Pacific region. These people were sent to one of the ten camps, and were
+                        forced to live under the watch of guards and surrounded by barbed wire. They were only allowed
+                        to carry what they had on their backs. Sometimes these people were forced into horse stalls and
+                        had to sleep on hay (Myer and Shizuru). As put by Yukiko Kimura, “This lake was the outstanding
+                        improvement that the Japanese here have made here at Tanforan. When we first arrived the side of
+                        the lake was only an unattractive, dried-up hole in the ground. The men built up its sides,
+                        planted trees, made a picturesque arbor, and as the crowning achievement, built a marvelous
+                        bridge… out of logs in &lsquo;neither American nor Japanese but in typical Tanforan style.&rsquo; It was
+                        then filled with water, and the end result was a transformation which seemed to be little short
+                        of a miracle” (Kimura). There was no plumbing and there were six feet high snow drifts in some
+                        camps. As Richard Aoki puts it, the food was “atrocious”. Medical supplies were low in the camps
+                        because the war took priority. Protesters on the outside would go to jail. People were able to
+                        work, and would get paid $16/month. These people were told that they were being protected, yet
+                        the barbed wire poked inward, guard towers watched them, and had half tracks blocking them from
+                        leaving (Aoki). The Japanese American community lost more than 6 billion dollars when properties
+                        were confiscated (Lange). This push for freedom showed the dedication of these Americans and the
+                        struggles that they faced while doing so. The interned Japanese were forced to live in poor
+                        conditions because the US did not give them the freedom they were supposed to. These people
+                        struggled greatly throughout the internment period and made their new home the best they could,
+                        showing how they have the power to make active changes in their community. 
+                    </p>
+                    <img src="internment_camps_2.png" alt="Internment Camps" className="content-image" />
+                </Book>
+                <Book coverImage="withey2018.png" title="Gene Allen" color='#63252a' position={[10, 25, 10]}>
                     <p>
                         Gene Allen, a Filipino individual, grew up in poverty in Philadelphia and faced the challenges
                         that come with being an Asian American. As he aged he gained an interest in politics, and
@@ -106,27 +164,9 @@ function App() {
                         welfare of Filipino workers continue to inspire others in their own pursuits for a more
                         equitable society.
                     </p>
+                    <img src="gene_allen_2.png" alt="Gene Allen" className="content-image" />
                 </Book>
-                <Book coverImage="yujiIchioka.webp" title="Yuji Ichioka" color='#63252a' position={[-40, 15, -12]}>
-                    <p>
-                        Yuji Ichioka was born in California in 1936 to a family of Japanese immigrants. Growing up, he
-                        faced discrimination and racism due to his Japanese heritage. In the aftermath of World War II,
-                        Ichioka became interested in the experiences of Japanese Americans during the war. He went on to
-                        become a historian and activist, and his work focused on researching and documenting the
-                        internment of Japanese Americans. He also worked to uncover the experiences of Japanese American
-                        soldiers who fought for the United States during the war, despite their families being
-                        imprisoned in internment camps. Ichioka&rsquo;s efforts to increase awareness of the Japanese
-                        American experience led him to become an advocate for Asian American studies programs in
-                        universities. He was a founding member of the Asian American Political Alliance and the Asian
-                        American Studies Department at UCLA. His work was instrumental in helping to create a space for
-                        Asian American voices in academia and increasing awareness of the Asian American experience
-                        among the general public. Ichioka&rsquo;s contributions to the field of Asian American studies
-                        continue to be felt today. His work helped to establish the importance of Asian American history
-                        and experiences in the broader context of American history. Through his activism and
-                        scholarship, Ichioka left a lasting legacy that has helped to shape our understanding of the
-                        Asian American experience.
-                    </p> 
-                </Book>
+               
                 <Book coverImage="peteryew.png" title="Peter Yew Beating" color='#63252a' position={[40, 15, 10]}>
                     <p>
                         Peter Yew&rsquo;s beating and the subsequent protests in 1975 represent an important moment of
@@ -149,20 +189,26 @@ function App() {
                         awareness about the issue and encouraging other Asian Americans to speak out against injustice.
                         Today, the fight against police brutality and racial discrimination continues, with recent
                         incidents like the killing of George Floyd and the rise in anti-Asian hate crimes serving as a
-                        reminder of the ongoing struggle for justice. 
+                        reminder of the ongoing struggle for justice.
+                        <img src="yuji_ichioka_2.png" alt="Yuji Ichioka" className="content-image" />
                     </p>
                 </Book>
-                <Book coverImage="911.jpg" title="9/11 and Racism/Shootings" color='#435c4c' position={[60, 5, -5]}>
+                <Book coverImage="911.jpg" title="9/11 and Racism/ Shootings" color='#435c4c' position={[60, 5, -5]}>
                     <p>
-                        After the events of 9/11, the people of the US were scared that there would be more terrorist
-                        attacks, which caused an uproar of racism. In a local gas station in Texas, Vasudev Patel was
-                        shot and killed by Mark Stroman as he was working. Mark Stroman’s intent for the murder was that
-                        Patel was of Middle Eastern descent. Several other people were murdered including Waqar Hasan, a
-                        Pakistani immigrant, and Rais Bhuiyan, an immigrant from Bangladesh. These people were murdered
-                        in cold blood just because of their skin. Even the killer himself admitted that this was all
-                        because of the events that occurred during 9/11. He was sentenced as the 1,262nd death row
-                        prisoner and executed on July 20, 2011 through lethal injection.
+                        The attack of 9/11 was a tragic event that left Americans to fear for the worst, but it also
+                        caused some to become islamophobic and racist to the South East. One of the events that
+                        showcased this fear was the Gas Station Shooting in Texas. This took place on October 4th, 2001
+                        where Vasudev Patel was shot and killed in the Gas Station he worked at. The murderer was Mark
+                        Anthony Stroman, in which he claimed that he killed him because he was of Middle Eastern
+                        descent. He also killed Waqar Hasan, a Pakistani immigrant who was shopping, and Rais Bhuiyan,
+                        an immigrant from Bangladesh (Perry). He testified that this was all because of the events that
+                        occurred during 9/11 (Stroman). He was sentenced as the 1,262nd death row prisoner and executed
+                        on July 20, 2011 through lethal injection. These minorities&rsquo; struggle to gain liberties of an
+                        “average” American citizen who does not have to deal with the dangers of murder or hate crimes
+                        is just one of the many events that occur in America&rsquo;s History. There was very little talk about
+                        this murder and shows how the government hides important events like these.
                     </p>
+                    <img src="9_11_2.png" alt="9/11" className="content-image" />
                 </Book>
                 <Book coverImage="aapa.png" title="Model Minority" color='#235b99' position={[35, 5, 10]}>
                     <p>
@@ -175,6 +221,7 @@ function App() {
                         delegitimize the black civil rights movement. Contrary to these stereotypes, Asian communities
                         had actually faced challenges and didn&rsquo;t like the &ldquo;model minority&rdquo; stereotype.
                     </p>
+                    <img src="model_minority_2.png" alt="Model Minority" className="content-image" />
                 </Book>
                 <Book coverImage="pickets.png" title="Third World Revolution" color='#435c4c' position={[0, 30, -15]}>
                     {/*<p>
@@ -209,8 +256,25 @@ function App() {
                         prevent some evictions. These are examples of the Third World Revolution and how they fought
                         against systemic racism.
                     </p>
+                    <img src="third_world_revolution_2.png" alt="Third World Revolution" className="content-image" />
                 </Book>
-                <Book title="Bibliography" color='#768b99' position={[0, 45, 10]}>
+                <Book title="Conclusion" color='#235b99' position={[0, 45, 10]}>
+                    <p>
+                        The experiences of Asian Americans in the United States are diverse. Different people have
+                        experienced both triumphs and struggles. The Asian American stories of people like Yuji Ichioka,
+                        Richard Aoki, Peter Yew, Gene Allen and the Vietnamese American community serve as reminders of
+                        the important contributions that Asian Americans have made to American society and the
+                        challenges they have faced along the way. Their struggles paved the way for the civil rights of
+                        Asian American people. Events like the Third World Revolution, the Delano Grape Strike, and the
+                        fight against police brutality in 1975 vastly changed the lives of all people in America. These
+                        events promoted freedom for Asian Americans to achieve rights and equality. Lastly, stigmas
+                        around 9/11 and Model Minorities are examples of how Asian Americans have overcome the
+                        assumptions of others. It shows the effort Asain Americans had to go through to not be
+                        discriminated against. All of these events together show the triumphs and struggles of Asian
+                        Americans in the United States and the impact they have on America&rsquo;s history. 
+                    </p>
+                </Book>
+                <Book title="Bibliography" color='#768b99' position={[0, 45, -5]}>
                     <div className="bibliography">
                         <p>Seattle&rsquo;s Asian American Movement - Seattle Civil Rights and Labor History Project, <AutoLink href="https://depts.washington.edu/civilr/aa_intro.htm" />. Accessed 3 May 2023.</p>
                         <p>&ldquo;An Alternative History of American Immigration.&rdquo; Libertarianism.org, 31 March 2020, <AutoLink href="https://www.libertarianism.org/essays/alternative-history-american-immigration" />. Accessed 3 May 2023.</p>
@@ -235,6 +299,9 @@ function App() {
                     </div>
                 </Book>
             </Bookshelf>
+            <img src="tux.webp" className="top-right-image" alt="Tux" />
+            <img src="rubric.png" className="top-left-image" alt="Rubric" />
+            <img src="pen.png" className="top-left-image-2" alt="Rubric" />
         </main>
     );
 }

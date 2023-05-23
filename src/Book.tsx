@@ -39,7 +39,7 @@ function Book({ children, coverImage, title, position = [0, 0, 0], color }: {
                     <div className="content" style={{ backgroundColor: color }}>
                         <div className="content-pages">
                             <h2>{title}</h2>
-                            {coverImage && <img src={coverImage} alt={title} className="cover-image" />}
+                            {coverImage && <img src={coverImage} alt={title} className="content-image" />}
                             {children}
                         </div>
                     </div>
