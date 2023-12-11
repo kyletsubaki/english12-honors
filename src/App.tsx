@@ -75,7 +75,7 @@ function App() {
                         During the 1940s, the US allied with China against Japan, so they &ldquo;recast&rdquo; Chinese
                         Americans to be &ldquo;model minorities&rdquo; to repeal laws like the Chinese Exclusion Act.
                         After the war had ended, Japanese Americans previously in internnent camps were encouraged to
-                        integrate quietly back in to society. Korean and Japanese immigrants continued to be stereotyped
+                        integrate quietly back in society. Korean and Japanese immigrants continued to be stereotyped
                         as model minorities even though the government became hostile to Japanese Americans and later
                         Vietnamese due to the Vietnam War. The idea of &ldquo;model minority&rdquo; was later used to
                         delegitimize the black civil rights movement. Contrary to these stereotypes, Asian communities
