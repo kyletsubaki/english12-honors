@@ -20,7 +20,7 @@ jobs:
       - run: npm ci
       
       - name: Build app
-        run: PUBLIC_URL=https://kyletsubaki.github.io/ush-project npm run build
+        run: PUBLIC_URL=https://kyletsubaki.github.io/english12-honors npm run build
       
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.4
