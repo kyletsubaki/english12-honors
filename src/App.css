@@ -15,7 +15,6 @@
 
 .cover-image {
     width: 100%;
-    aspect-ratio: 1.25;
     object-fit: cover;
 }
 
@@ -176,7 +175,7 @@
     text-indent: 2em hanging;
 }
 
-.top-left-image, .top-left-image-2, .top-right-image {
+.top-left-image, .top-left-image-2, .top-right-image, .bottom-left-image, .bottom-right-image {
     position: absolute;
     z-index: -1;
 }
@@ -195,6 +194,19 @@
     transform: rotate(12deg);
 }
 
+.bottom-left-image {
+    left: 2em;
+    bottom: 2em;
+    width: 8em;
+    transform: rotate(30deg);
+}
+
+.bottom-right-image {
+    right: 2em;
+    bottom: 2em;
+    width: 8em;
+    transform: rotate(-30deg);
+}
 
 .top-left-image-2 {
   width: 8em;
