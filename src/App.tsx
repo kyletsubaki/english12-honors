@@ -2,10 +2,6 @@ import Bookshelf from './Bookshelf';
 import Book from './Book';
 import './App.css';
 
-function AutoLink(props: React.HTMLProps<HTMLAnchorElement>) {
-    return <a {...props}>{props.href}</a>;
-}
-
 function App() {
     return (
         <main>
